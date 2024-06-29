@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>Регистрация</title>
+</head>
+<body background="Фон сайта.png">
+
+<br>
+<br>
+<br>
+
+<p id="textreg" style="text-align:center; font-family:sans-serif; font-size:30px">
+<b>Регистрация</b>
+</p>
+
+<p id="textlogin" style="text-align:center; font-family:sans-serif; font-size:20px">
+Введите имя пользователя:
+</p>
+
+<div align="center">
+<input id="boxlogin" type="text" size="32">
+</input>
+</div>
+
+<br>
+
+<p id="textpassword" style="text-align:center; font-family:sans-serif; font-size:20px">
+Введите пароль:
+</p>
+
+<div align="center">
+<input id="boxpassword" type="password" size="32">
+</input>
+</div>
+
+<br>
+
+<div align="center">
+<input id="butreg" type="submit" value="Зарегистрироваться">
+</input>
+<input id="butreset" type="reset" value="Сбросить">
+</input>
+</div>
+
+<script>
+document.getElementById("butreset").onclick = function(){
+	document.getElementById("boxlogin").value = "";
+	document.getElementById("boxpassword").value = "";
+}
+
+document.getElementById("butreg").onclick = function(){
+	let login = document.getElementById("boxlogin").value;
+	let password = document.getElementById("boxpassword").value;
+	if (login != "" && password != "")
+		document.location.href = "Главное меню.html";
+}
+</script>
+
+</body>
+</html>
