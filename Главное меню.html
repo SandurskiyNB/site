@@ -1,67 +1,35 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Главное меню</title>
-<style>
-table {
-	border-collapse: collapse;
-}
-
-th, td {
-	border: none;
-	padding: 15px;
-	text-align: center;
-}
-</style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Главное меню</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="scripts.js" defer></script>
 </head>
+<body>
+	<div class="top-bar">
+		<div id="ad">
+			<p class="adtext">Качество!<br>Импортный товар!<br>Всегда низкие цены!</p>
+		</div>
+		<div class="stars">
+			<img class="star" src="images/star.svg" style="left: -80px;">
+			<img class="star" src="images/star.svg" style="left: 10px;">
+			<img class="star" src="images/star.svg" style="left: 100px;">
+			<img class="star" src="images/star.svg" style="left: 190px;">
+			<img class="star" src="images/star.svg" style="left: 280px;">
+		</div>
+		<a class="link" href="Стулья.html" id="chairs">Стулья</a>
+		<a class="link" href="Столы.html" id="table">Столы</a>
+		<a class="link" href="Шкафы.html" id="closet">Шкафы</a>
+		<a class="link" href="Диваны.html" id="sofa">Диваны</a>
+	</div>
+	<div id="mainpart">
+		<p class="mainwords"><span>FurnStore</span> – лучший магазин мебели</p>
+	</div>
 
-<body background="Фон сайта.png">
-
-<br>
-<br>
-<br>
-
-<p id="texselect" style="text-align:center; font-family:sans-serif; font-size:30px">
-<b>Главное меню магазина</b>
-</p>
-
-<p id="texselect" style="text-align:center; font-family:sans-serif; font-size:25px">
-Выберите раздел, связанный с предметом мебели, который хотите купить:
-</p>
-
-<div align="center">
-<table>
-
-<tr>
-<td> <a href="Стулья.html">
-<p style="text-align:center; font-family:sans-serif; font-size:20px">
-Стулья
-</p>
-</a> </td>
-</tr>
-
-<tr>
-<td> <a href="Столы.html">
-<p style="text-align:center; font-family:sans-serif; font-size:20px">
-Столы
-</p>
-</a> </td>
-</tr>
-
-<tr>
-<td> <a href="Диваны.html">
-<p style="text-align:center; font-family:sans-serif; font-size:20px">
-Диваны
-</p>
-</a> </td>
-</tr>
-
-<tr>
-<td> <a href="Шкафы.html">
-<p style="text-align:center; font-family:sans-serif; font-size:20px">
-Шкафы
-</p>
-</a> </td>
-</tr>
-
+	<audio id="clicksound" controls style="position: absolute; bottom: 20px;">
+        <source src="sounds/music.mp3" type="audio/mpeg">
+    </audio>
 </body>
 </html>
