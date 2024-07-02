@@ -1,0 +1,128 @@
+body {
+    background-image: url("images/Фон сайта.png");
+}
+
+.top-bar {
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 100%;
+    height: 150px;
+}
+
+a {
+    color:whitesmoke;
+    font-family: 'Comic Sans MS', sans-serif;
+    text-decoration: none;
+} 
+
+a:hover {
+    color:rgb(176, 226, 77);
+    text-decoration: underline;
+}
+
+.top-bar a {
+    position: absolute;
+    font-size: 43px;
+    top: 50px;
+}
+
+#ad {
+    position: absolute;
+    left: 30px;
+    top: -27px;
+}
+
+.adtext {
+    font-family: cursive;
+    color: rgb(156, 48, 48);
+    font-size: 35px;
+    text-align: center;
+}
+
+.star {
+    position: absolute;
+    bottom: 320px;
+    pointer-events: none;
+    user-select: none;
+}
+
+#chairs {
+    right: 610px;
+}
+
+#table {
+    right: 440px;
+}
+
+#closet {
+    right: 240px;
+}
+
+#sofa {
+    right: 40px;
+}
+
+#mainpart {
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.mainwords {
+    text-align: center;
+    font-family: 'Lucida Sans Unicode', sans-serif;
+    font-size: 50px;
+    color: rgb(10, 43, 230);
+}
+
+.mainwords span {
+    font-size: 70px;
+    color: rgb(196, 68, 21);
+    font-weight: bolder;
+    font-style: italic;
+}
+
+#defance {
+    position: absolute;
+    bottom: 220px;
+    left: 50%;
+    transform: translate(-50%);
+    pointer-events: none;
+    user-select: none;
+}
+
+.button {
+    position:relative;
+    top:-20px;
+    font-family: Cursive;
+    font-size: 20px;
+    color:rgb(118, 8, 221);
+    background-color: rgba(80, 84, 85, 0.7);
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgb(25, 46, 33);
+}
+
+.button:active {
+    transform: scale(0.88);
+}
+
+.price {
+    position: relative;
+    top:-30px;
+}
+
+#back {
+    position: center;
+    font-size: 30px;
+}
+
+.box {
+    position:relative;
+    font-family: cursive;
+    color: rgb(116, 115, 115);
+}
