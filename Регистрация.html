@@ -1,59 +1,28 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Регистрация</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Регистрация</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="scripts.js" defer></script>
 </head>
-<body background="Фон сайта.png">
-
-<br>
-<br>
-<br>
-
-<p id="textreg" style="text-align:center; font-family:sans-serif; font-size:30px">
-<b>Регистрация</b>
-</p>
-
-<p id="textlogin" style="text-align:center; font-family:sans-serif; font-size:20px">
-Введите имя пользователя:
-</p>
-
-<div align="center">
-<input id="boxlogin" type="text" size="32">
-</input>
-</div>
-
-<br>
-
-<p id="textpassword" style="text-align:center; font-family:sans-serif; font-size:20px">
-Введите пароль:
-</p>
-
-<div align="center">
-<input id="boxpassword" type="password" size="32">
-</input>
-</div>
-
-<br>
-
-<div align="center">
-<input id="butreg" type="submit" value="Зарегистрироваться">
-</input>
-<input id="butreset" type="reset" value="Сбросить">
-</input>
-</div>
-
-<script>
-document.getElementById("butreset").onclick = function(){
-	document.getElementById("boxlogin").value = "";
-	document.getElementById("boxpassword").value = "";
-}
-
-document.getElementById("butreg").onclick = function(){
-	let login = document.getElementById("boxlogin").value;
-	let password = document.getElementById("boxpassword").value;
-	if (login != "" && password != "")
-		document.location.href = "Главное меню.html";
-}
-</script>
-
+<body>
+	<p class="mainwords">Регистрация</p>
+	<div>
+		<img id="defance" src="images\defance.svg" >
+	</div>
+	<p class="adtext"><br><br>Логин:</p>
+	<div align="center" id="inplogin">
+		<input class="box" id="boxlogin" style="top:-30px" type="text">
+	</div>
+	<p class="adtext" style="position: relative; top: -40px">Пароль:</p>
+	<div align="center" id="inppassword">
+		<input class="box" id="boxpassword" style="top:-65px" type="password">
+	</div>
+	<div align="center">
+		<input id="butregistration" class="button" type="submit" value="Зарегистрироваться">
+		<input id="butreset" class="button" type="reset" value="Очистить поля">
+	</div>
 </body>
 </html>
